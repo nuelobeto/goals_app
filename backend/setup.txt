@@ -1,0 +1,19 @@
+step 1: create backend folder.
+step 2: create server.js file.
+step 3: run "npm init -y" in the backend folder.
+step 4: install dependencies: express, dotenv, mongoose
+step 5: install dev dependencies: nodemon
+step 6: setup nodemon in the package.json of backend. e.g: "server": "nodemon server.js"
+step 7: require/import dependencies in server.js. e.g: const name = require("dependenciesName")
+step 8: create express "app" in server.js: const app = express()
+step 9: create .env file in backend
+step 10: create PORT environment variable. e.g: PORT=5000
+step 11: call "listen" on the app objectto get the server running: app.listen(port, ()=>{})
+step 12: call .env  variables with process.env.VARIABLE_NAME. e.g: const port = process.env.PORT
+step 13: create routes folder and create route files for each resource. e.g goalsRoutes.js
+step 14: create resource routes, e.g get, post, put, delete routes.
+step 15: in server.js import the routes created and use them like so: app.use("/main-route-path", routeResource)
+step 16: create controller folder for route functions. e.g: const getGoals = (req, res) => {
+  res.status(200).json({ message: "get goals" });
+};
+step 17: use the controller functions in their respective routes. e.g: router.get("/", getGoals);

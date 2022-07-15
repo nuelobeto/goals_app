@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid black;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 0 0 2rem;
+}
+
+section {
+  padding: 1rem;
+}
+
+section h1,
+p {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+}
+
+form input {
+  height: 40px;
+  margin: 0 0 1rem 0;
+  padding: 0 0 0 16px;
+}
+
+form button {
+  padding: 1rem 2rem;
+}
+
+.form_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goals li {
+  width: 100%;
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 0 0 1rem;
+  position: relative;
+}
+
+.goals li button {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
